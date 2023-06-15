@@ -6,7 +6,6 @@ import { ROLES } from './config/roles'
 const App = () => {
   return (
     <Routes>
-
       <Route path='/' element={<Layout />}>
         <Route index element={<Public />} />
         <Route path='/login' element={<Login />} />
@@ -36,12 +35,9 @@ const App = () => {
                           <Route path='new' element={<NewNoteForm/>}/>
                           
                       </Route>
-
                   </Route>
-
               </Route>
         </Route>
-
 
         </Route>
 
