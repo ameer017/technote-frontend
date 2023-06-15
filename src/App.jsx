@@ -17,15 +17,12 @@ const App = () => {
               <Route element={<PersistLogin/>}>
 
                   <Route path='/dash' element={<DashLayout/>}>
-
                       <Route index element={<Welcome />} />
 
                       <Route path="users">
-
                           <Route index element={<UsersList />} />
                           <Route path=':id' element={<EditUser/>}/>
                           <Route path='new' element={<NewUserForm/>}/>
-
                       </Route>
 
                       <Route path="notes">
