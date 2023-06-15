@@ -26,11 +26,9 @@ const App = () => {
                       </Route>
 
                       <Route path="notes">
-
                           <Route index element={<NoteList />} />
                           <Route path=':id' element={<EditNote/>}/>
                           <Route path='new' element={<NewNoteForm/>}/>
-                          
                       </Route>
                   </Route>
               </Route>
